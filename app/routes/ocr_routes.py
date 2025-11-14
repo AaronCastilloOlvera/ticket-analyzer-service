@@ -42,6 +42,7 @@ async def analyze_image(file: UploadFile = File(...)):
             "Add 'CA - ' at the start of the bet description if it is a 'crear apuesta' (a single match with 2 or more selections). "
             "Add 'Parley' at the start of the bet description if it is a parley bet. "
             "Device type should only be 'movil' or 'desktop' based on the layout of the ticket. "
+            "Add a column call studied with boolean false value. "
             "Add a column called comments with empty string value. "
             "Return a compact JSON with this structure: "
             f"{json.dumps(json_example)} "
